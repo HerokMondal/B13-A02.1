@@ -200,7 +200,7 @@ body{
     width: 240px;
     height: 94px;
     margin-top: 80px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
     /* display: flex; */
     align-items: center;
     justify-content: center;
@@ -219,21 +219,127 @@ body{
     font-weight: 100;
     line-height: 20px;
     color: #FFFFFF;
+    /* margin-bottom: 100px; */
 }
-/* responsive */
 
-@media screen and (max-width: 576px) {
+/*  Why Choose Section */
+.choose{
+    width: 100%;
+    /* max-width: 1600px; */
+    background-color: #230E3D;
+    margin:0 auto;
+    text-align: center;
+    padding: 70px 0 80px;
+    margin-top: 100px;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h2{
+    margin:0 0 30px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.Choose-container{
+    /* max-width: 1200px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr) ; */
+    grid-template-rows: 220px 220px 280px;
+    gap: 30px;
+    width: 100%;
+}
+
+.Choose-box{
+    box-sizing: border-box;
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 40px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.box-1{
+    /* width: 380px;
+    height: 480px; */
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.box-2, .box-3{
+    /* width: 790px;
+    height: 250px; */
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.box-4{
+    /* width: 790px;
+    height: 279 px; */
+
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.box-5{
+    /* width: 380px;
+    height: 276px; */
+
+    grid-column:span 1;
+    grid-row:span 1;
+
     
+}
+
+.Choose-box img {
+
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.Choose-box h3 {
+
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Choose-box p {
+
+    margin: 0;
+    color: #a99bb5;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+   
+@media screen and (max-width: 576px) {
+    body{
+        width: 100%;
+    }
     .navbar{
         width: 100%;
         height: 66px;
-        
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-        
-        
+    }
+    .banner {
+        flex-direction: column;
     }
 
+    
 
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   
     .brand {
         font-size: 30px;
     }
@@ -258,6 +364,7 @@ body{
         margin-top: 0;
         padding: 60px 20px 70px;
         box-sizing: border-box;
+        /* background-size: cover; */
         
         
     }
@@ -279,6 +386,30 @@ body{
         width: auto;
         height: 105px;
     }
+/* about */
+    .about-container{
+        width: 100%;
+        height:570px;
+    }
+
+    .card-info{
+        width: 100%;
+        height: 208px;
+    }
+
+    .card-container{
+        width: 100%;
+        height: 208px;
+    }
+
+
+ 
+
+
+
+    
+
+
 
 
     
