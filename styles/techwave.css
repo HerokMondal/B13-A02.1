@@ -383,10 +383,125 @@ body{
 .episode-info > span{
     color: #00FF88;
 }
+/* host */
+
+.host-secttion{
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    
+}
+
+.host-card{
+    max-width: 1200px;
+    /* height: 280px; */
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: #351165;
+    border-radius: 40px;
+}
+
+.host-card h2{
+    color: #ffffff;
+    font-size: 1.rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.host-card p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.sociel-icon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    
+    gap: 8px;
+    /* border: 1px solid #533C72; */
+    border-radius: 50%;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    /* border: 1px solid #533C72; */
+     
+}
+
+/* footer */
+
+.footer-container{
+ width: 100%;
+ min-height: 412px;
+ background: url(../assets/footer-bg.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ margin-top: 120px;
+ 
+}
+
+.footer-content{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+  font-size: 3rem; 
+  font-weight: 800; 
+  color: #ffffff; 
+  margin-bottom: 32px;
+}
+.footer-links{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 32px;
+    
+}
+.footer-links span{
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.footer-content{
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
    
 @media screen and (max-width: 576px) {
     body{
         width: 100%;
+
+        align-items: center;
+        /* margin-right:50px ; */
+        /* margin: 0 auto; */
     }
     .navbar{
         width: 100%;
@@ -398,7 +513,7 @@ body{
 
     
 
-    .card-container{
+    .card-container, .footer-links{
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -476,7 +591,36 @@ body{
     .featured-container{
         width: 100%;
         /* padding: 0px; */
+    
     }
+
+    .host-secttion{
+        width: 100%;
+    }
+    .host-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container{
+        width: 100%;
+        min-width: 240px;
+        padding: 40px 20px;
+        
+    
+    }
+    .footer-links {
+        width: 100%;
+        max-width: 330px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 15px;
+        margin-bottom: 22px;
+    }
+    
 
     @media screen and (min-width:576px) and (max-width: 992px){
         /* .episode-content {
